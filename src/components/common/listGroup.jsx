@@ -1,7 +1,8 @@
 import React from "react";
 
 const ListGroup = (props) => {
-  const { genres, onItemSelect, textProperty, valueProperty } = props;
+  const { genres, onItemSelect, textProperty, valueProperty, currentGenre } =
+    props;
   const styleSheet = {
     cursor: "pointer",
   };
@@ -13,7 +14,9 @@ const ListGroup = (props) => {
             key={m[valueProperty]}
             style={styleSheet}
             onClick={() => onItemSelect(m)}
-            className="list-group-item"
+            className={
+              m === currentGenre ? "list-group-item active" : "list-group-item"
+            }
           >
             {m[textProperty]}
           </li>
