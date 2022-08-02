@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+li.hvr-bounce-to-right::before{
+  background: #0d6efd;
+}
