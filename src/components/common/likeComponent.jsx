@@ -1,9 +1,9 @@
 import React from "react";
 const Like = (props) => {
-  let classes = "fa fa-heart";
+  let classes = "hvr-bounce-in fa fa-heart";
   let liked = {
     cursor: "pointer",
-    color: "#C51104",
+    color: "deeppink",
   };
   let notliked = {
     cursor: "pointer",
@@ -13,7 +13,7 @@ const Like = (props) => {
     <i
       style={true === props.liked ? liked : notliked}
       onClick={props.onClick}
-      className={classes + " hvr-bounce-in"}
+      className={classes}
       area-hidden="true"
     ></i>
   );
