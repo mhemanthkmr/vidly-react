@@ -12,7 +12,11 @@ const Pagination = (props) => {
         {pages.map((m) => (
           <li
             key={m}
-            className={m === currentPage ? "page-item active" : "page-item"}
+            className={
+              m === currentPage
+                ? "hvr-float page-item active"
+                : "hvr-float page-item "
+            }
           >
             <a onClick={() => onPageChange(m)} className="page-link" href="#/">
               {m}

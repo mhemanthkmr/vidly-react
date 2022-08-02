@@ -1,5 +1,4 @@
 import React from "react";
-
 const ListGroup = (props) => {
   const { genres, onItemSelect, textProperty, valueProperty, currentGenre } =
     props;
@@ -8,14 +7,16 @@ const ListGroup = (props) => {
   };
   return (
     <div>
-      <ul className="list-group">
+      <ul className="list-group list-group-flush">
         {genres.map((m) => (
           <li
             key={m[valueProperty]}
             style={styleSheet}
             onClick={() => onItemSelect(m)}
             className={
-              m === currentGenre ? "list-group-item active" : "list-group-item"
+              m === currentGenre
+                ? "list-group-item active"
+                : "hvr-bounce-to-right list-group-item"
             }
           >
             {m[textProperty]}

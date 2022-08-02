@@ -43,7 +43,7 @@ class MoviesList extends Component {
               <td>
                 <button
                   onClick={() => onDelete(movie)}
-                  className="btn bg-danger btn-sm text-white "
+                  className="hvr-float-shadow btn bg-danger btn-sm text-white "
                 >
                   Delete
                 </button>
