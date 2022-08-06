@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import Like from "./common/likeComponent";
 import Table from "./common/tabel";
-import TableBody from "./common/tableBody";
-import TableHeader from "./common/tableHeader";
 
 class MoviesList extends Component {
   columns = [
