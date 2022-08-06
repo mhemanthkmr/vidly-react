@@ -8,10 +8,12 @@ import "font-awesome/css/font-awesome.css";
 import "hover.css";
 import "./App.css";
 import { BrowserRouter } from "react-router-dom";
+import Navbar from "./components/common/navbar";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
+    <Navbar />
     <App />
   </BrowserRouter>
 );
