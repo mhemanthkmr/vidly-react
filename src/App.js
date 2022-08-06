@@ -13,8 +13,8 @@ class App extends Component {
         <Route path="/movies" element={<Movies />}></Route>
         <Route path="/rentals" element={<Rentals />}></Route>
         <Route path="/customers" element={<Customer />}></Route>
-        <Route path="* " element={<NotFound />}></Route>
         <Route path="/" element={<Navigate to="/movies" replace />} />
+        <Route path="*" element={<NotFound />}></Route>
       </Routes>
     );
   }
