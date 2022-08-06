@@ -65,29 +65,31 @@ class Movies extends Component {
     }
 
     return (
-      <div className="row">
-        <div className="col-sm-3">
-          <ListGroup
-            genres={this.state.genres}
-            onItemSelect={this.handleGenreSelect}
-            currentGenre={this.state.selectGenre}
-          />
-        </div>
-        <div className="col">
-          <p>Showing {totalCount} movies in the database.</p>
-          <MoviesList
-            onDelete={this.handleDelete}
-            movies={movies}
-            onLike={this.handleLike}
-            onSort={this.handleSort}
-            sortColumn={sortColumn}
-          />
-          <Pagination
-            itemsCount={totalCount}
-            pageSize={pageSize}
-            currentPage={currentPage}
-            onPageChange={this.handlePageChange}
-          />
+      <div className="container">
+        <div className="row">
+          <div className="col-sm-3">
+            <ListGroup
+              genres={this.state.genres}
+              onItemSelect={this.handleGenreSelect}
+              currentGenre={this.state.selectGenre}
+            />
+          </div>
+          <div className="col">
+            <p>Showing {totalCount} movies in the database.</p>
+            <MoviesList
+              onDelete={this.handleDelete}
+              movies={movies}
+              onLike={this.handleLike}
+              onSort={this.handleSort}
+              sortColumn={sortColumn}
+            />
+            <Pagination
+              itemsCount={totalCount}
+              pageSize={pageSize}
+              currentPage={currentPage}
+              onPageChange={this.handlePageChange}
+            />
+          </div>
         </div>
       </div>
     );
