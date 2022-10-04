@@ -12,6 +12,7 @@ import RegisterForm from "./components/registerForm";
 class App extends Component {
   render() {
     return (
+      //Added a Routes for React
       <Routes>
         <Route path="/movies" element={<Movies />}></Route>
         <Route path="/movies/:id" element={<MovieForm />}></Route>
